@@ -16,3 +16,6 @@ jobs:
         run: gh repo sync ${{ github.repository }} --source dreamhunter2333/cloudflare_temp_email --branch main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+permissions:
+  contents: write
